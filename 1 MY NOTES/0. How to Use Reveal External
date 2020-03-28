@@ -1,4 +1,37 @@
 1. To set up a new presentation:
-      - Ensure that you have node installed --- 
-      - Ensure that you have node installed --- 
+      - Ensure that you have nodejs and npm installed --- 
+	  
+	  				sudo apt update
+					sudo apt install nodejs
+					sudo apt install npm
+					
+					
+					To check which version of Node.js you have installed, type:
+
+    		`				nodejs -v
+
+      - Ensure that you have node http-server installed
+	  
+	  			Installation via npm:
+
+ 						npm install http-server -g
+
+				This will install http-server globally so that it may be run from the command line.
+				
+				
+2. NOW lets install reveal_external:
+
+			create a new folder where you cant to have your presentation
+			cd into the new folder 
+			Install with npm: 
+				npm install reveal_external
+				
+3. cd into the reveal_external folder (YOUR_BASE_DIRECTORY_node_modules\reveal_external) where you have external_external installed
+		then run:
+		http-server -a localhost -p 8000 -c-1
+		
+		
+4. You can view your presentation at: http://localhost:8000
+		use your browser to navigate to your presentation's index.html 
+		
       
