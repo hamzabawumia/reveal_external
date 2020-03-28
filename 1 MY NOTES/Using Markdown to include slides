@@ -1,0 +1,17 @@
+You can use HTML inside Markdown, so you would just need to enclose all the content of the md file in an HTML tag 
+(like <div> or <section>):
+
+<section data-markdown="section-1.md"></section>
+Where section-1.md is:
+
+<div>
+  <h2>Title</h2>
+</div>
+
+PROBLEM: the slides load slowly if you use too many markdown "includes"
+
+the better solution is to use:
+
+https://github.com/calevans/external
+or an EVEN more improved one is from 
+https://github.com/janschoepke/reveal_external
