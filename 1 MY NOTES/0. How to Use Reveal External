@@ -27,6 +27,8 @@
 				npm install reveal_external
 				
 3. cd into the reveal_external folder (YOUR_BASE_DIRECTORY_node_modules\reveal_external) 
+		That is...
+		    cd node_modules\reveal_external
 		where you have external_external installed
 		then run:
 		http-server -a localhost -p 8000 -c-1
