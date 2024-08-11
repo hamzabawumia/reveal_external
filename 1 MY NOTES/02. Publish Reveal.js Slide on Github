@@ -1,8 +1,11 @@
-Yes, you can publish your Reveal.js presentation (or ebook) on GitHub using GitHub Pages. GitHub Pages allows you to host static websites directly from a GitHub repository. Here’s how you can publish your Reveal.js project on GitHub Pages:
+Yes, you can publish your Reveal.js presentation (or ebook) on GitHub using GitHub Pages. 
+GitHub Pages allows you to host static websites directly from a GitHub repository. 
+Here’s how you can publish your Reveal.js project on GitHub Pages:
 
 ### 1. **Prepare Your Project**
 
-Ensure your Reveal.js project is set up correctly and works locally. Your project should have the following structure:
+Ensure your Reveal.js project is set up correctly and works locally. 
+Your project should have the following structure:
 
 ```
 /my-reveal-project
@@ -16,7 +19,8 @@ Ensure your Reveal.js project is set up correctly and works locally. Your projec
 
 ### 2. **Create a GitHub Repository**
 
-1. **Create a New Repository**: Go to [GitHub](https://github.com) and create a new repository. You can name it something like `my-reveal-presentation`.
+1. **Create a New Repository**: Go to [GitHub](https://github.com) and create a new repository. 
+	You can name it something like `my-reveal-presentation`.
 
 2. **Initialize the Repository**: You can initialize it with a README if you like, but it’s not necessary.
 
@@ -43,15 +47,21 @@ Ensure your Reveal.js project is set up correctly and works locally. Your projec
 
 1. **Navigate to Repository Settings**: Go to the repository on GitHub and click on the `Settings` tab.
 
-2. **Scroll to GitHub Pages Section**: In the "Code and automation" section, find the "Pages" option on the left sidebar.
+2. **Scroll to GitHub Pages Section**: In the "Code and automation" section, find the "Pages" option 
+		on the left sidebar.
 
-3. **Select the Branch**: Under "Build and deployment", select the branch you want to use (usually `main` or `master`). Set the root directory if your files are in the root of the repository. If your project is in a subdirectory (like `/docs`), you would select that directory.
+3. **Select the Branch**: Under "Build and deployment", select the branch you want to use 
+	(usually `main` or `master`). 
+	Set the root directory if your files are in the root of the repository. 
+	If your project is in a subdirectory (like `/docs`), you would select that directory.
 
 4. **Save Settings**: Click "Save" to apply the settings.
 
 ### 5. **Access Your Published Site**
 
-After a few moments, GitHub Pages will publish your site. You can access it via the URL provided in the GitHub Pages settings. It usually follows the format:
+After a few moments, GitHub Pages will publish your site. 
+You can access it via the URL provided in the GitHub Pages settings. 
+It usually follows the format:
 
 ```
 https://yourusername.github.io/my-reveal-presentation/
@@ -67,11 +77,14 @@ https://yourusername.github.io/my-reveal-presentation/
    git push
    ```
 
-2. **GitHub Pages Updates**: Your GitHub Pages site will automatically update with the changes you push to the repository.
+2. **GitHub Pages Updates**: 
+	Your GitHub Pages site will automatically update with the changes you push to the repository.
 
 ### Additional Tips
 
 - **Custom Domain**: If you have a custom domain, you can configure it in the GitHub Pages settings.
-- **Automatic Deployment**: GitHub Actions can be used for more advanced deployment scenarios, including automatic deployments when changes are made.
+- **Automatic Deployment**: GitHub Actions can be used for more advanced deployment scenarios, 
+	including automatic deployments when changes are made.
 
-By following these steps, you can publish your Reveal.js presentation on GitHub Pages, making it accessible to anyone with the link.
+	By following these steps, you can publish your Reveal.js presentation on GitHub Pages, 
+	making it accessible to anyone with the link.
