@@ -88,3 +88,19 @@ https://yourusername.github.io/my-reveal-presentation/
 
 	By following these steps, you can publish your Reveal.js presentation on GitHub Pages, 
 	making it accessible to anyone with the link.
+
+
+5. Now, you can set a custom domain if you like 
+
+      Git will then take a few minutes to build your site and start serving your site 
+      @ https://<your_domain>.github.io/<your_repo>
+      example: https://hamzabawumia.github.io/study_effectively
+
+REMEMBER! it is NOT:
+               https://github.com/hamzabawumia.github.io/study_effectively
+            but:
+               https://hamzabawumia.github.io/study_effectively
+
+				https://hamzabawumia.github.io/french_in_45_days
+
+NOTE THE DIFFERENCE.
