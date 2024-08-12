@@ -1,0 +1,18 @@
+Adding internal Links in your slides
+
+Start by giving your target slide a unique id attribute. 
+Next, you can create an anchor with an href in the format #/<id>. 
+Here's a complete working example:
+
+<section>
+	<a href="#/grand-finale">Go to the grand-finale slide</a>
+</section>
+
+<section>
+	<h2>Slide 2</h2>
+</section>
+
+<section id="grand-finale">
+	<h2>The end</h2>
+	<a href="#/0">Back to the first</a>
+</section>
