@@ -16,3 +16,16 @@ Here's a complete working example:
 	<h2>The end</h2>
 	<a href="#/0">Back to the first</a>
 </section>
+
+
+Numbered Links
+
+It's also possible to link to slides based on their slide index. 
+The href format for an numbered link is #/0 where 0 is the horizontal slide number. 
+To link to a vertical slide use #/0/0 where the second number is the index of the vertical slide target.
+
+<a href="#/2">Go to 2nd slide</a>
+<a href="#/3/2">Go to the 2nd vertical slide inside of the 3rd slide</a>
+
+
+...
