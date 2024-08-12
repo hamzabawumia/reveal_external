@@ -1,49 +1,11 @@
-I want to add some navigation links to a slide in reveal.js however nothing happens when the link is clicked. 
+Add the Link Directly to Slide Content. THIS WORKS !
 
-The code that does not work
+If the link is not meant to be in a fixed position, you can place it directly within the slide content.
 
-    <div class="footer">
-        <a href="http://www.google.com" id="noteslink">TOC</a>
-    </div>
+html
 
- It appears that elements are layered in RevealJS and the link was not at the top layer. 
-   That is, some invisible element was covering it up, and hence the link was not clickable, 
-   and did not work. How do I added the z-index property with z-index of 100 to the footer class to make the link work/
-   
-   
-   
-   
-   In Reveal.js, it’s possible for elements to be layered in a way that prevents interaction with some elements if they are covered by other elements. To address this issue by adjusting the z-index, you should ensure that the z-index is applied correctly and that your CSS rules are properly defined.
-
-Here's how you can add a z-index to your .footer class to make sure the link is clickable:
-
-    Update Your CSS:
-    Add or modify your CSS to ensure that the .footer class has a higher z-index value than other potentially overlapping elements.
-
-    css
-
-    .footer {
-        position: absolute; /* or relative, depending on your layout */
-        bottom: 0;
-        left: 0;
-        z-index: 100; /* Ensure this is high enough to be on top */
-        background-color: rgba(255, 255, 255, 0.8); /* Optional: to make it visible */
-    }
-
-    #noteslink {
-        color: #000; /* Optional: to ensure the link is visible */
-    }
-
-    Check the Positioning Context:
-    The z-index property only works on elements that have a position value other than static (e.g., relative, absolute, fixed, or sticky). Make sure that the .footer class has one of these positioning values set.
-
-    Ensure No Overlapping Elements:
-    Inspect your slide and ensure that no other elements are overlapping the .footer class. You can use the browser’s developer tools to check the stacking context and make adjustments as needed.
-
-    Use Developer Tools:
-    Open your browser’s developer tools (usually accessible with F12 or right-clicking and selecting "Inspect") and use the Elements tab to inspect the .footer element. Check if any other element is overlapping it and use the CSS inspector to adjust z-index values accordingly.
-
-    Test and Debug:
-    After applying these changes, refresh your presentation and test the link again. If the issue persists, double-check other CSS rules or JavaScript that might affect the layout and interaction of your elements.
-
-By applying these changes, you should be able to make the navigation link in your footer clickable even if other elements are present on the slide.
+<section>
+    <h1>Slide Title</h1>
+    <p>Some content here.</p>
+    <a href="http://www.google.com">Visit Google</a>
+</section>
